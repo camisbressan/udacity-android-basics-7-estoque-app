@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin"
+    tools:context=".DetalheActivity">
+
+    <!-- Coluna de titulos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nome do Produto -->
+        <TextView
+            style="@style/EstiloDetalheTitulo"
+            android:text="@string/hint_produto" />
+        <!-- Preco do Produto -->
+        <TextView
+            style="@style/EstiloDetalheTitulo"
+            android:text="@string/hint_preco" />
+        <!-- Quantidade do Produto -->
+        <TextView
+            style="@style/EstiloDetalheTitulo"
+            android:text="@string/hint_quantidade" />
+        <!-- Nome do Fornecedor -->
+        <TextView
+            style="@style/EstiloDetalheTitulo"
+            android:text="@string/hint_fornecedor" />
+        <!-- Contato do Fornecedor -->
+        <TextView
+            style="@style/EstiloDetalheTitulo"
+            android:text="@string/contato_fornecedor" />
+    </LinearLayout>
+
+    <!-- Coluna de valores -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Nome do Produto -->
+        <TextView
+            android:id="@+id/edit_produto"
+            style="@style/EstiloDetalheCampos"
+            android:text="nome"/>
+        <!-- Preco do Produto -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/EstiloDetalheCampos"
+                android:text="@string/reais_simbolo" />
+            <TextView
+                android:id="@+id/edit_preco"
+                android:layout_marginLeft="@dimen/button_margin"
+                style="@style/EstiloDetalheCampos"
+                android:text="10"/>
+        </LinearLayout>
+        <!-- Quantidade do Produto -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_menos"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/botao_menos" />
+            <TextView
+                android:id="@+id/edit_quantidade"
+                style="@style/EstiloDetalheCampos"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:text="123"/>
+            <Button
+                android:id="@+id/button_mais"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/botao_mais" />
+        </LinearLayout>
+        <!-- Nome do Fornecedor -->
+        <TextView
+            android:id="@+id/edit_fornecedor"
+            style="@style/EstiloDetalheCampos"
+            android:text="fornecedor"/>
+        <!-- Contato do Fornecedor -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!-- DDD Telefone do Fornecedor -->
+            <TextView
+                android:id="@+id/edit_ddd_telefone"
+                style="@style/EstiloDetalheCampos"
+                android:text="11"/>
+            <!-- Numero Telefone do Fornecedor -->
+            <TextView
+                android:id="@+id/edit_numero_telefone"
+                style="@style/EstiloDetalheCampos"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:text="988784344"/>
+            <Button
+                android:id="@+id/button_fornecedor"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:textColor="@color/colorText"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:text="@string/telefone_simbolo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Nome do Produto -->
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="nome"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <!-- Preco do Produto -->
+        <TextView
+            android:id="@+id/preco"
+            android:layout_below="@id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="10"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <!-- Complemento do preco do Produto -->
+        <TextView
+            android:layout_below="@id/nome"
+            android:layout_toRightOf="@id/preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/reais_texto"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <!-- Quantidade do Produto -->
+        <TextView
+            android:id="@+id/quantidade"
+            android:layout_below="@id/preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="12"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <!-- Complemento da quantidade do Produto -->
+        <TextView
+            android:layout_below="@id/preco"
+            android:layout_toRightOf="@id/quantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/em_estoque_text"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <!-- Imagem para Venda do Produto -->
+        <ImageView
+            android:id="@+id/image_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="alterarQuantidade"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

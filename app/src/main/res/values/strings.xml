@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Estoque</string>
+
+    <!-- Activity -->
+    <string name="editor_activity_title_new">Adicionar Produto</string>
+    <string name="editor_activity_title_edit">Editar Produto</string>
+    <string name="detalhe_activity_title">Detalhe do Produto</string>
+
+    <!-- Lista Vazia -->
+    <string name="empty_view_title_text">O estoque está vazio...</string>
+    <string name="empty_view_subtitle_text">Comece adicionando um produto</string>
+
+    <!-- Ações -->
+    <string name="acao_deletar_produto">Deletar Todos os Produtos</string>
+    <string name="acao_inserir_produto">Inserir Produto de Demonstração</string>
+    <string name="acao_salvar">Salvar</string>
+    <string name="acao_editar">Editar</string>
+    <string name="acao_deletar">Deletar</string>
+    <string name="acao_cancelar">Cancelar</string>
+    <string name="acao_vender">Venda</string>
+    <string name="acao_descartar">Descartar</string>
+    <string name="acao_continuar">Continuar</string>
+
+    <!-- Mensagens -->
+    <string name="editor_insert_successful">Produto salvo!</string>
+    <string name="editor_insert_failed">Erro salvando o produto...</string>
+    <string name="editor_update_successful">Produto atualizado!</string>
+    <string name="editor_update_failed">Erro atualizando o produto...</string>
+    <string name="unsaved_changes_dialog_msg">Descartar suas alterações e sair?</string>
+    <string name="editor_delete_successful">Produto deletado!</string>
+    <string name="editor_delete_failed">Error deletando o produto...</string>
+    <string name="delete_dialog_msg">Deletar esse produto?</string>
+
+    <!-- Textos -->
+    <string name="botao_menos">-</string>
+    <string name="botao_mais">+</string>
+    <string name="reais_texto">reais</string>
+    <string name="reais_simbolo">R$</string>
+    <string name="em_estoque_text">em estoque</string>
+    <string name="category_produto">Produto</string>
+    <string name="category_fornecedor">Fornecedor</string>
+    <string name="contato_fornecedor">Contato do Fornecedor</string>
+    <string name="telefone_simbolo">\u260E</string>
+
+    <!-- Hint -->
+    <string name="hint_produto">Nome do Produto</string>
+    <string name="hint_preco">Preço do Produto</string>
+    <string name="hint_quantidade">Quantidade</string>
+    <string name="hint_fornecedor">Nome do Fornecedor</string>
+    <string name="hint_ddd_telefone">DDD</string>
+    <string name="hint_numero_telefone">Número do Telefone</string>
+
+    <!-- Informativos de Quantidade -->
+    <string name="quantidade_text">Quantidade já está zerada!</string>
+    <string name="quantidade_atualizada_text">Quantidade atualizada!</string>
+    <string name="quantidade_atualizada_erro_text">Erro ao atualizar quantidade!</string>
+
+    <!-- Validações -->
+    <string name="descricao_erro">Produto precisa de uma descrição!</string>
+    <string name="preco_erro">Produto precisa de um preço!</string>
+    <string name="quantidade_erro">Produto precisa de uma quantidade!</string>
+    <string name="fornecedor_erro">Produto precisa do nome de um fornecedor!</string>
+    <string name="ddd_erro">Produto precisa de um DDD para o telefone do fornecedor!</string>
+    <string name="telefone_erro">Produto precisa do telefone do fornecedor!</string>
+
+</resources>

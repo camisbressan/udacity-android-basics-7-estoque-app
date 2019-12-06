@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Dados do Produto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label Produto -->
+        <TextView
+            android:text="@string/category_produto"
+            style="@style/EstiloCategoria" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Nome do Produto-->
+            <EditText
+                android:id="@+id/edit_produto"
+                android:hint="@string/hint_produto"
+                android:inputType="textCapWords"
+                style="@style/EstiloEditarCampos" />
+
+            <!-- Preco do Produto-->
+            <EditText
+             android:id="@+id/edit_preco"
+             android:hint="@string/hint_preco"
+             android:inputType="number"
+             style="@style/EstiloEditarCampos" />
+
+            <!-- Quantidade -->
+            <EditText
+                android:id="@+id/edit_quantidade"
+                android:hint="@string/hint_quantidade"
+                android:inputType="number"
+                style="@style/EstiloEditarCampos" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Dados do Fornecedor -->
+    <LinearLayout
+        android:id="@+id/container_fornecedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label Fornecedor -->
+        <TextView
+            android:text="@string/category_fornecedor"
+            style="@style/EstiloCategoria" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Nome do Fornecedor -->
+            <EditText
+                android:id="@+id/edit_fornecedor"
+                android:hint="@string/hint_fornecedor"
+                android:inputType="textCapWords"
+                style="@style/EstiloEditarCampos" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- DDD Telefone do Fornecedor -->
+                <EditText
+                    android:id="@+id/edit_ddd_telefone"
+                    android:hint="@string/hint_ddd_telefone"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    style="@style/EstiloEditarCampos" />
+
+                <!-- Numero Telefone do Fornecedor -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_numero_telefone"
+                    android:hint="@string/hint_numero_telefone"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    style="@style/EstiloEditarCampos" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
